@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RicAutomatiza - Enlaces Sociales</title>
+    <title>RicAutomatiza - Automatización</title>
     <!-- Carga de Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Carga de Fuente Montserrat -->
@@ -58,14 +58,14 @@
         }
 
         .hero-content {
-            max-width: 700px; /* Ancho máximo para el contenido */
+            max-width: 650px; /* Reducido el ancho para texto más corto */
             width: 100%;
             padding: 0 20px;
         }
 
         /* Título Principal */
         .hero h1 {
-            font-size: 4rem; /* Ajustado para ser grande pero no excesivo */
+            font-size: 4rem; 
             font-weight: 900; 
             margin-bottom: 20px;
             color: var(--primary-color);
@@ -76,41 +76,36 @@
         
         /* Subtítulo/Descripción */
         .hero .description {
-            font-size: 1.5em; 
-            font-weight: 600; 
-            margin: 0 auto 40px auto; /* Ajustamos el margen inferior */
+            font-size: 1.3em; /* Ajustado para el texto corto */
+            font-weight: 500; 
+            margin: 0 auto 40px auto; 
             color: var(--text-color);
             opacity: 0.9;
-        }
-
-        .profile-picture {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            margin: 0 auto 35px auto;
-            border: 5px solid var(--primary-color);
-            box-shadow: 0 0 20px rgba(74, 144, 226, 0.6); 
-            transition: transform 0.3s ease;
-        }
-        .profile-picture:hover {
-            transform: scale(1.05);
-            box-shadow: 0 0 30px var(--primary-color);
+            line-height: 1.5;
         }
 
         /*=== Enlaces Sociales ===*/
         .social-links {
-            padding-top: 20px; /* Espacio superior */
-            margin-top: 40px; /* Separación de la descripción */
-            border-top: 1px solid rgba(74, 144, 226, 0.2); /* Separador visual */
+            padding-top: 20px;
+            margin-top: 40px; 
+            border-top: 1px solid rgba(74, 144, 226, 0.2); 
         }
 
         .social-links a {
-            color: var(--primary-color);
+            /* Usamos un color ligeramente diferente para WhatsApp para que destaque */
+            color: var(--primary-color); 
             margin: 0 20px;
             font-size: 3em; 
             transition: color 0.3s ease, transform 0.2s ease;
             filter: drop-shadow(0 0 4px rgba(74, 144, 226, 0.5));
         }
+        
+        /* Estilo específico para WhatsApp (verde oficial) */
+        .social-links .whatsapp-link {
+            color: #25D366; 
+            filter: drop-shadow(0 0 4px rgba(37, 211, 102, 0.7));
+        }
+
 
         .social-links a:hover {
             color: #fff;
@@ -124,7 +119,7 @@
                 font-size: 3em;
             }
             .hero .description {
-                font-size: 1.2em;
+                font-size: 1.1em;
             }
             .social-links a {
                 font-size: 2.5em;
@@ -138,10 +133,6 @@
             .hero .description {
                 font-size: 1em;
             }
-            .profile-picture {
-                width: 100px;
-                height: 100px;
-            }
         }
     </style>
 </head>
@@ -151,22 +142,18 @@
     <header class="hero" id="home">
         <div class="hero-content container">
             
-            <!-- Imagen de Perfil -->
-            <div class="profile-picture mx-auto">
-                <img src="https://drive.google.com/uc?export=view&id=1OwARsiA7pUs2LsVEaUT2GdtTUwraiZAe" 
-                     alt="Foto de Perfil de RicAutomatiza"
-                     class="w-full h-full object-cover rounded-full"
-                     onerror="this.onerror=null;this.src='https://placehold.co/150x150/0A192F/BBCCDD?text=R.A';">
-            </div>
-            
             <h1 class="uppercase">RicAutomatiza</h1>
             
             <p class="description">
-                Especialista en Automatización y Tecnología. Te muestro cómo transformar procesos manuales en flujos de trabajo eficientes para **optimizar tu tiempo y multiplicar tu productividad** en el mundo digital.
+                Te muestro cómo usar la automatización y la tecnología para simplificar tu vida. Libérate de tareas repetitivas y gana tiempo en tu día a día.
             </p>
             
             <!-- Enlaces Sociales -->
             <div class="social-links flex justify-center flex-wrap gap-4">
+                <!-- Enlace de WhatsApp -->
+                <a href="https://wa.me/523341866429" target="_blank" aria-label="WhatsApp" class="whatsapp-link">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
                 <a href="https://www.tiktok.com/@ric.automatiza" target="_blank" aria-label="TikTok">
                     <i class="fab fa-tiktok"></i>
                 </a>
@@ -175,9 +162,6 @@
                 </a>
                 <a href="https://www.youtube.com/@Ricautomatiza" target="_blank" aria-label="YouTube">
                     <i class="fab fa-youtube"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/ricardo-santana-29688a387/" target="_blank" aria-label="LinkedIn">
-                    <i class="fab fa-linkedin"></i>
                 </a>
             </div>
         </div>
@@ -194,3 +178,5 @@
     
 </body>
 </html>
+
+
