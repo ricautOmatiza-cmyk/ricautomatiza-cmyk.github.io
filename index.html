@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RicAutomatiza - Enlaces Sociales</title>
+    <!-- Carga de Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Carga de Fuente Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Carga de Font Awesome para los íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <style>
+        /* Variables CSS para el tema Oscuro (Deep Navy) */
+        :root {
+            --primary-color: #4A90E2; /* Azul Brillante */
+            --background-light: #0A192F; /* Fondo Principal (Deep Navy) */
+            --background-dark: #04101A; /* Fondo más oscuro para footer */
+            --text-color: #BBCCDD; 
+            --heading-color: #FFFFFF;
+        }
+
+        /* Reset básico y tipografía */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-light);
+            overflow-x: hidden;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            width: 100%;
+        }
+        
+        /*=== HERO Section (Contenido principal centrado) ===*/
+        .hero {
+            padding: 50px 0;
+            text-align: center;
+            flex-grow: 1; 
+            display: flex; /* Añadido para centrado vertical */
+            align-items: center;
+            justify-content: center;
+            min-height: calc(100vh - 80px); /* Ocupa casi toda la altura visible */
+        }
+
+        .hero-content {
+            max-width: 700px; /* Ancho máximo para el contenido */
+            width: 100%;
+            padding: 0 20px;
+        }
+
+        /* Título Principal */
+        .hero h1 {
+            font-size: 4rem; /* Ajustado para ser grande pero no excesivo */
+            font-weight: 900; 
+            margin-bottom: 20px;
+            color: var(--primary-color);
+            text-shadow: 0 0 10px rgba(74, 144, 226, 0.8), 
+                         0 0 20px rgba(74, 144, 226, 0.5); 
+            line-height: 1.1;
+        }
+        
+        /* Subtítulo/Descripción */
+        .hero .description {
+            font-size: 1.5em; 
+            font-weight: 600; 
+            margin: 0 auto 40px auto; /* Ajustamos el margen inferior */
+            color: var(--text-color);
+            opacity: 0.9;
+        }
+
+        .profile-picture {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 0 auto 35px auto;
+            border: 5px solid var(--primary-color);
+            box-shadow: 0 0 20px rgba(74, 144, 226, 0.6); 
+            transition: transform 0.3s ease;
+        }
+        .profile-picture:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 30px var(--primary-color);
+        }
+
+        /*=== Enlaces Sociales ===*/
+        .social-links {
+            padding-top: 20px; /* Espacio superior */
+            margin-top: 40px; /* Separación de la descripción */
+            border-top: 1px solid rgba(74, 144, 226, 0.2); /* Separador visual */
+        }
+
+        .social-links a {
+            color: var(--primary-color);
+            margin: 0 20px;
+            font-size: 3em; 
+            transition: color 0.3s ease, transform 0.2s ease;
+            filter: drop-shadow(0 0 4px rgba(74, 144, 226, 0.5));
+        }
+
+        .social-links a:hover {
+            color: #fff;
+            transform: scale(1.15);
+            filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8));
+        }
+        
+        /*=== Media Queries ===*/
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 3em;
+            }
+            .hero .description {
+                font-size: 1.2em;
+            }
+            .social-links a {
+                font-size: 2.5em;
+                margin: 0 10px;
+            }
+        }
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 2.5em;
+            }
+            .hero .description {
+                font-size: 1em;
+            }
+            .profile-picture {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sección Principal (Hero) -->
+    <header class="hero" id="home">
+        <div class="hero-content container">
+            
+            <!-- Imagen de Perfil -->
+            <div class="profile-picture mx-auto">
+                <img src="https://drive.google.com/uc?export=view&id=1OwARsiA7pUs2LsVEaUT2GdtTUwraiZAe" 
+                     alt="Foto de Perfil de RicAutomatiza"
+                     class="w-full h-full object-cover rounded-full"
+                     onerror="this.onerror=null;this.src='https://placehold.co/150x150/0A192F/BBCCDD?text=R.A';">
+            </div>
+            
+            <h1 class="uppercase">RicAutomatiza</h1>
+            
+            <p class="description">
+                Especialista en Automatización y Tecnología. Te muestro cómo transformar procesos manuales en flujos de trabajo eficientes para **optimizar tu tiempo y multiplicar tu productividad** en el mundo digital.
+            </p>
+            
+            <!-- Enlaces Sociales -->
+            <div class="social-links flex justify-center flex-wrap gap-4">
+                <a href="https://www.tiktok.com/@ric.automatiza" target="_blank" aria-label="TikTok">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+                <a href="https://www.instagram.com/ricautomatiza/" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.youtube.com/@Ricautomatiza" target="_blank" aria-label="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/ricardo-santana-29688a387/" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Footer Simple -->
+    <footer class="mt-auto">
+        <div class="bg-background-dark py-5 text-center text-xs text-white opacity-50">
+            <div class="container">
+                <p>&copy; 2025 RicAutomatiza | Automatización y Tecnología.</p>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
